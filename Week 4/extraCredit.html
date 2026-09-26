@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!--Justin Pierre September 25 2026-->
+<html lang="en">
+<head>
+  <title>CSS Practice Extra Credit</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    header {
+      color: rgb(31, 163, 233);
+      background-color: grey;
+    }
+    header,
+    main,
+    footer {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Three-column layout */
+    main {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+    .favoriteFoods {
+      color: blueviolet;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: right;
+      border-bottom: 3px solid;
+    }
+
+    #factsAboutMe {
+      color: rgb(177, 23, 197);
+      font-size: 25px;
+      font-style: italic;
+      background-color: aquamarine;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    p {
+      color: black;
+      font-size: 24px;
+      font-family: cursive;
+      font-style: italic;
+    }
+
+    footer p {
+      color: blueviolet;
+      font-size: 20px;
+      text-align: center;
+      font-style: none;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h1,h3 {
+      color: aquamarine;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .column {
+      padding: 20px;
+      min-height: 300px;
+      border-radius: 8px;
+    }
+
+    /* Left column */
+    .sideleft {
+      background-color: #add8e6;
+    }
+
+    /* Middle column */
+    .middle {
+      background-color: #a9bcba;
+    }
+
+    /* Right column */
+    .sideright {
+      background-color: #c78b88;
+    }
+
+    footer {
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Responsive layout */
+    @media (max-width: 700px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <h1>CSS Template Extra Credit</h1>
+    <p>This is a page about my favorite movies, foods, and more.</p>
+
+    <h2>Justin Pierre</h2>
+    <h3>This is my first CSS web page with CSS!</h3>
+  </header>
+
+  <main>
+
+    <section class="column sideleft favoriteFoods">
+      <h2>My Favorite Foods</h2>
+
+      <ul>
+        <li>Pizza</li>
+        <li>Jamaican beef patty</li>
+        <li>Cinnamon Rolls</li>
+      </ul>
+    </section>
+
+    <section class="column middle factsAboutMe">
+      <h2>5 Facts About Me</h2>
+
+      <ol>
+        <li>I like to read.</li>
+        <li>I like to go to the gym.</li>
+        <li>I strongly dislike the cold.</li>
+        <li>I like to clean.</li>
+        <li>I like to go hiking.</li>
+      </ol>
+    </section>
+
+    <aside class="column sideright p">
+      <h2>What Do I Want to Do After JCCC?</h2>
+
+      <p>
+        I am still undecided. After JCCC I either want to get a job immediately or get a scholorship that can send me to a college so I can get my bachelors degree in Computer Science. 
+      </p>
+    </aside>
+
+  </main>
+
+  <footer>
+    <p>jpierre2@stumail.jccc.edu 09/25/2026</p>
+  </footer>
+
+</body>
+</html>
