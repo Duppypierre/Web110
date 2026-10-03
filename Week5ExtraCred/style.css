@@ -1,0 +1,11 @@
+body{
+    background-color: rgb(118, 160, 234);
+}
+.special-effect {
+    text-align: center;
+    border-bottom: 4px solid;
+}
+.special-header {
+    text-align: center;
+    background-color: white;
+}
